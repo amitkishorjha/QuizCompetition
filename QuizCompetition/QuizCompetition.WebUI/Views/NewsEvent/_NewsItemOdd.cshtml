@@ -1,0 +1,30 @@
+﻿@model School.DomainModel.NewsEvent
+
+<div class="wthree-news-grids">
+    <div class="col-md-5 col-xs-5 datew3-agileits">
+        <img src="@Model.GetRelativeUrl(Model.ImageUrl)" class="img-responsive" alt="" />
+    </div>
+    <div class="col-md-7 col-xs-7 datew3-agileits-info ">
+        <h5><a href="#" data-toggle="modal" data-target="#@Model.Id">@Model.Title</a></h5>
+        <h6>@Model.DateOfNews.ToShortDateString()</h6>
+        <p>@Model.FullDescription</p>
+    </div>
+    <div class="clearfix"> </div>
+</div>
+
+<div class="modal about-modal fade" id="@Model.Id" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">@Model.Title</h4>
+            </div>
+            <div class="modal-body">
+                <div class="agileits-w3layouts-info">
+                    <img src="@Model.GetRelativeUrl(Model.ImageUrl)" class="img-responsive" alt="" />
+                    <p>@Model.FullDescription</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

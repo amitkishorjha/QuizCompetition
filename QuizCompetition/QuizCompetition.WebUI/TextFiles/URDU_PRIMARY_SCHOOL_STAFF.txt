@@ -1,0 +1,35 @@
+Momin Riyaz Ahd Mohd Sabir		| MA.DEd			| Principal	
+Momin Sabahat Afrin Md Ibrahim	|S.S.C DEd		|Ass.Teacher
+Khan Nikhat Firdos Zahoor Ahmad	|S.S.C DEd		|Ass.Teacher
+Naseem Bano AmzadAli		|H.S.c DEd		|Ass.Teacher
+Momin Anisa GulamNabi		|B.A.DEd			|Ass.Teacher
+Momin Latifa Ab.Hamid		|S.S.C DEd		|Ass.Teacher
+Momin Nusrat Mohd Ibrahim		|B.A.DEd			|Ass.Teacher
+Md Aarif Mohd Yusuf		|S.S.C DEd		|Ass.Teacher
+Shaikh Mohd Imran MaulaBaksh	|H.S.c DEd		|Ass.Teacher
+Khan QamarJahan Sarwar		|S.S.c DEd		|Ass.Teacher
+Momin KausarBano Mohd Yunus	|S.S.c DEd		|Ass.Teacher
+Momin ShaguftaAnjum Mushtaque Ahd	|B.A.DEd			|Ass.Teacher
+Momin Shahnaz GulamMustufa	|S.S.C DEd		|Ass.Teacher
+Sigri HinaKausar Mohd Hanif		|B.A.DEd			|Ass.Teacher
+Momin TanveerKausar Masood Ahd	|B.A.DEd			|Ass.Teacher
+Azma Shabana Mahefooz Ahd		|S.S.c DEd		|Ass.Teacher
+Ansari Shahenaz Ashfaque		|B.A.DEd			|Ass.Teacher
+Ansari Memuna Muqeem Ahd		|B.A.DEd			|Ass.Teacher
+Momin Nasreen Mohd Khalil		|B.A.DEd			|Ass.Teacher
+Momin Rubina Razab		|BCOM.DEd		|Ass.Teacher
+Kharbe Tazeen Shabir Ahd		|M.A.BEd			|Ass.Teacher
+Momin Sarah Mohd Akhtar		|M.A.DEd			|Ass.Teacher
+Azra Khanum Mohd Ismaeel		|H.S.c DEd		|Ass.Teacher
+Momin Saiqa Hasan			|B.A.DEd			|Ass.Teacher
+Patel Rafana Ismaeel		|B.A.DEd			|Ass.Teacher
+Lonbaal Fahemeen Nadir		|HSC.DEd			|Ass.Teacher
+Momin Farzeen Niyaz Ahd		|H.S.C.DEd		|Ass.Teacher
+Momin LeenaKausar Mohd Aslam	|H.S.C Atd		|Ass.Teacher
+Ansari Tabussum Ijaaz Ahd		|H.S.C.DEd(alema)		|Ass.Teacher
+Lonbaal Ifteshaam Naveed		|M.SC.DEd		|Ass.Teacher
+Shaikh Saima Sharifuddin		|B.A.DEd			|Ass.Teacher
+Khan SanaKausar Firoz		|B.A.DEd			|Ass.Teacher
+Momin Shahjahan Ab.Majeed		|HSC.Montesri		|Ass.Teacher
+Ansari Afsama Shafie		|HSC.Montesri		|Ass.Teacher
+Ansari Shabana AliRaza		|HSC.Montesri		|Ass.Teacher

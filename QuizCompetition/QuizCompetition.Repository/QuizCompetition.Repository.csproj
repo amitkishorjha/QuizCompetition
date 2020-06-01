@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{27123886-1D62-44C6-8F32-A23AE1203DDE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuizCompetition.Repository</RootNamespace>
+    <AssemblyName>QuizCompetition.Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\QuizCompetitionDbContext.cs" />
+    <Compile Include="Common\GenericRepository.cs" />
+    <Compile Include="Common\IGenericRepository.cs" />
+    <Compile Include="Impl\AttamtedQuestionsRepository.cs" />
+    <Compile Include="Impl\NoQuesPerLeavelRoundRepository.cs" />
+    <Compile Include="Impl\QuizTeamRepository.cs" />
+    <Compile Include="Impl\QuizRoundRepository.cs" />
+    <Compile Include="Impl\QuizQuestionRepository.cs" />
+    <Compile Include="Impl\QuizLevelRepository.cs" />
+    <Compile Include="Impl\UserRepository.cs" />
+    <Compile Include="Interface\INoQuesPerLeavelRoundRepository.cs" />
+    <Compile Include="Interface\IQuizTeamRepository.cs" />
+    <Compile Include="Interface\IAttamtedQuestionsRepository.cs" />
+    <Compile Include="Interface\IQuizRoundRepository.cs" />
+    <Compile Include="Interface\IQuizQuestionRepository.cs" />
+    <Compile Include="Interface\IQuizLevelRepository.cs" />
+    <Compile Include="Interface\IUserRepository.cs" />
+    <Compile Include="Migrations\201812171323527_UserTable.cs" />
+    <Compile Include="Migrations\201812171323527_UserTable.Designer.cs">
+      <DependentUpon>201812171323527_UserTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812180815284_AddOtherTables.cs" />
+    <Compile Include="Migrations\201812180815284_AddOtherTables.Designer.cs">
+      <DependentUpon>201812180815284_AddOtherTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812201403549_AddnewColumnQuestionTable.cs" />
+    <Compile Include="Migrations\201812201403549_AddnewColumnQuestionTable.Designer.cs">
+      <DependentUpon>201812201403549_AddnewColumnQuestionTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812241328487_addAttamtedQuestionstable.cs" />
+    <Compile Include="Migrations\201812241328487_addAttamtedQuestionstable.Designer.cs">
+      <DependentUpon>201812241328487_addAttamtedQuestionstable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901151402155_addQuizteamtable.cs" />
+    <Compile Include="Migrations\201901151402155_addQuizteamtable.Designer.cs">
+      <DependentUpon>201901151402155_addQuizteamtable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901160614479_AddMarksColumn.cs" />
+    <Compile Include="Migrations\201901160614479_AddMarksColumn.Designer.cs">
+      <DependentUpon>201901160614479_AddMarksColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901161308022_ChangeTeamModel.cs" />
+    <Compile Include="Migrations\201901161308022_ChangeTeamModel.Designer.cs">
+      <DependentUpon>201901161308022_ChangeTeamModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901161734281_AddTeamLevelRoundTable.cs" />
+    <Compile Include="Migrations\201901161734281_AddTeamLevelRoundTable.Designer.cs">
+      <DependentUpon>201901161734281_AddTeamLevelRoundTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901191003000_AddIsSkipproperty.cs" />
+    <Compile Include="Migrations\201901191003000_AddIsSkipproperty.Designer.cs">
+      <DependentUpon>201901191003000_AddIsSkipproperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001231128172_aads.cs" />
+    <Compile Include="Migrations\202001231128172_aads.Designer.cs">
+      <DependentUpon>202001231128172_aads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuizCompetition.Models\QuizCompetition.Models.csproj">
+      <Project>{0e126447-aea4-4dfe-b2f3-d0ebeaf9c6ab}</Project>
+      <Name>QuizCompetition.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201812171323527_UserTable.resx">
+      <DependentUpon>201812171323527_UserTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812180815284_AddOtherTables.resx">
+      <DependentUpon>201812180815284_AddOtherTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812201403549_AddnewColumnQuestionTable.resx">
+      <DependentUpon>201812201403549_AddnewColumnQuestionTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812241328487_addAttamtedQuestionstable.resx">
+      <DependentUpon>201812241328487_addAttamtedQuestionstable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901151402155_addQuizteamtable.resx">
+      <DependentUpon>201901151402155_addQuizteamtable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901160614479_AddMarksColumn.resx">
+      <DependentUpon>201901160614479_AddMarksColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901161308022_ChangeTeamModel.resx">
+      <DependentUpon>201901161308022_ChangeTeamModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901161734281_AddTeamLevelRoundTable.resx">
+      <DependentUpon>201901161734281_AddTeamLevelRoundTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901191003000_AddIsSkipproperty.resx">
+      <DependentUpon>201901191003000_AddIsSkipproperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001231128172_aads.resx">
+      <DependentUpon>202001231128172_aads.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

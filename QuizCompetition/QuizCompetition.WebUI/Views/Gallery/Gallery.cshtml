@@ -1,0 +1,31 @@
+﻿@model IEnumerable<School.DomainModel.PhotoDetails>
+@{
+    ViewBag.Title = "Gallery";
+ 
+}
+
+<div id="lab" class="w3ls-section gallery">
+    <div class="container">
+        <h3 class="heading-agileinfo">Our Gallery<span>When Climbing The Career Ladder</span></h3>
+        <div class="gallery-grids">
+            @foreach (var photoDeatils in Model)
+            {
+                <div class="col-sm-4 col-xs-6 gallery-grid">
+                    <div class="grid effect-apollo">
+                        <a class="example-image-link" href="@photoDeatils.GetRelativeUrl(photoDeatils.ImageUrl)" data-lightbox="example-set" data-title="@photoDeatils.Description">
+                            <img src="@photoDeatils.GetRelativeUrl(photoDeatils.ImageUrl)" alt="" height="260" width="500" />
+                            <div class="figcaption">
+                                <p>@photoDeatils.Title</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            }
+            
+            <div class="clearfix"> </div>
+        </div>
+        
+        
+    </div>
+</div>
+

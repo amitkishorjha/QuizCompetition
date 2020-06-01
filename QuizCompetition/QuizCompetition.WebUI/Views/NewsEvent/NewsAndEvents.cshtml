@@ -1,0 +1,36 @@
+﻿@model IEnumerable<School.DomainModel.NewsEvent>
+@{
+    ViewBag.Title = "NewsAndEvents";
+    var i = 1;
+}
+
+<!-- news -->
+<div class="news">
+    <div class="container">
+        <h2 class="heading-agileinfo">News & Events<span>Something Is Happening Here</span></h2>
+        <div class="news-agileinfo">
+            <div class="news-w3row">
+                
+                @foreach(var news in Model)
+                {
+                    if(i%2==0)
+                    {
+                        @Html.Partial("_NewItemEven", news)
+                    }
+                    else
+                    {
+                        @Html.Partial("_NewsItemOdd", news)
+                    }
+                    i++;
+                }
+
+
+                <div class="clearfix"> </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- //news -->
+
+

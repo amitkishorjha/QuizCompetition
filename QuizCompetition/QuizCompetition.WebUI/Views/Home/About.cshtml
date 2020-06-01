@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "About";
+    IEnumerable<School.WebUI.SMHS.Models.StaffDetails> UrduHighSchoolStaffList = ViewBag.UrduHighSchoolStaffList;
+    IEnumerable<School.WebUI.SMHS.Models.StaffDetails> UrduJrCollegeStaffList = ViewBag.UrduJrCollegeStaffList;
+    IEnumerable<School.WebUI.SMHS.Models.StaffDetails> ComputerUrduJrCollegeStaffList = ViewBag.ComputerUrduJrCollegeStaffList;
+    IEnumerable<School.WebUI.SMHS.Models.StaffDetails> DiniyatUrduJrCollegeStaffList = ViewBag.DiniyatUrduJrCollegeStaffList;
+    IEnumerable<School.WebUI.SMHS.Models.StaffDetails> NonTeachingUrduJrCollegeStaffList = ViewBag.NonTeachingUrduJrCollegeStaffList;
+    IEnumerable<School.WebUI.SMHS.Models.StaffDetails> UrduPrimarySchoolStaffList = ViewBag.UrduPrimarySchoolStaffList;
+
+    
+}
+<!-- about -->
+<div class="welcome">
+    <div class="container">
+        <h3 class="heading-agileinfo">About Us<span>When Climbing The Career Ladder</span></h3>
+        <div class="w3ls_news_grids">
+            <div class="col-md-12 w3_agile_about_grid_left">
+                
+                <p>
+                    <i>
+                        The SALAHUDDIN AYYUBI MEMORIYAL URDU HIGH SCHOOL & Jr COLLEGE of Thane District was established in 1975 and is rendering its services in the field of Education for more than 75 years.
+                         Under the People's Walfare Association.
+                    </i> 
+                    
+                    Currently, the S.A.M. SCHOOL is running 2 primary schools, 2 Secondary schools, a Computer Center,2 Junior colleges, a multi-faculty college for women affiliated to the university of Mumbai The main objective of the S.A.M. Society is to make available the educational facilities to the people of entire Thane District. The efforts of the members of the S.A.M. SCHOOL are appreciated by one and all, thus ensuring continual improvement of all its institutions. We are all aware of the fact that learning is a continuous and a creative process. It aims to develop the capabilities of the students and thus helps towards the enrichment and progress of the society. To keep pace with the changing methods in the Teaching-Learning process, all the Institutions of the S.A.M. SCHOOL have incorporated modern technology to ensure academic excellence. The selfless services of the Office Bearers have served as an inspiration to many such organizations in the District. We thus intend to produce students of knowledge, character and adequate skills to compete in the fast changing world.
+                </p>
+            </div>
+            
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!-- //about -->
+
+
+<!-- team -->
+<div class="team">
+    <div class="container">
+        <h3 class="heading-agileinfo">Meet Our Staff<span>We have some talented stars too</span></h3>
+        <div class="w3_agile_team_grids">
+            <h3>Urdu High School Teaching Staff</h3>
+           @Html.Partial("_Staff_List",UrduHighSchoolStaffList)
+
+            <div class="clearfix"> </div>
+        </div>
+
+        
+
+        <div class="w3_agile_team_grids">
+            <h3>Urdu Junior College Teaching Staff</h3>
+            @Html.Partial("_Staff_List", UrduJrCollegeStaffList)
+
+            <div class="clearfix"> </div>
+        </div>
+        <div class="w3_agile_team_grids">
+            <h3>Urdu Junior College Computer Staff</h3>
+            @Html.Partial("_Staff_List", ComputerUrduJrCollegeStaffList)
+
+            <div class="clearfix"> </div>
+        </div>
+
+        <div class="w3_agile_team_grids">
+            <h3>Urdu Junior College Diniyat Staff</h3>
+            @Html.Partial("_Staff_List", DiniyatUrduJrCollegeStaffList)
+
+            <div class="clearfix"> </div>
+        </div>
+
+        <div class="w3_agile_team_grids">
+            <h3>Urdu Junior College Non-Teaching Staff</h3>
+            @Html.Partial("_Staff_List", NonTeachingUrduJrCollegeStaffList)
+
+            <div class="clearfix"> </div>
+        </div>
+
+        <div class="w3_agile_team_grids">
+            <h3>Urdu Primary School Teaching Staff</h3>
+            @Html.Partial("_Staff_List", UrduPrimarySchoolStaffList)
+
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!-- team -->
+
+

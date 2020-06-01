@@ -1,0 +1,197 @@
+﻿@{ 
+    var schoolName = "Salahuddin Ayyubi Memorial High School & Jr. College";
+    var ContactNumber = "+91 025 222 525 12";
+    var mailID = "feedback@samschool.com";
+}
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>@schoolName | @ViewBag.Title </title>
+    <!--/tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!--//tags -->
+    <link href="~/Content/portal/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />    
+    <link href="~/Content/portal/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="~/Content/portal/css/owl.carousel.css" type="text/css" media="all">
+    <link rel="stylesheet" href="~/Content/portal/css/owl.theme.css" type="text/css" media="all">
+    <link href="~/Content/portal/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/portal/css/lightbox.css">
+    <!-- //for bootstrap working -->
+    <link href="//fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="agileits_top_menu">
+            <div class="w3l_header_left">
+                <ul>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>@ContactNumber</li>
+                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:@(mailID)">@mailID</a></li>
+                </ul>
+            </div>
+            <div class="w3l_header_right">
+                <div class="w3ls-social-icons text-left">
+                    <a class="facebook" href="https://www.facebook.com/Salahuddin-Ayyubi-Memorial-Urdu-High-School-Jr-College-424531654662640/"><i class="fa fa-facebook"></i></a>
+                    <a class="twitter" href="https://twitter.com/AyubbiJr"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="content white agile-info">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            
+                            <h1><span><img src="~/Content/portal/images/sam_logo.jpg" height="60" width="60" /></span> Salahuddin Ayyubi Memorial <label style="margin-left: 76px; text-align:left;">Urdu High School And Jr. College</label></h1>
+                        </a>
+                    </div>
+                    <!--/.navbar-header-->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <nav class="link-effect-2" id="link-effect-2">
+                            <ul class="nav navbar-nav" style="margin-top: 42px;">
+                                <li class="@ViewBag.Index"><a href="@Url.Action("Index","Home")" class="effect-3">Home</a></li>
+                                <li class="@ViewBag.About"><a href="@Url.Action("About","Home")" class="effect-3">About</a></li>
+                                <li class="@ViewBag.NewsAndEvents"><a href="@Url.Action("NewsAndEvents","NewsEvent")" class="effect-3">News &amp; Events</a></li>
+                                <li class="@ViewBag.Gallery"><a href="@Url.Action("Gallery","Gallery")" class="effect-3">Gallery</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">Admin <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="@Url.Action("Login","Login")">Login</a></li>
+                                        @*<li><a href="icons.html">Icons</a></li>*@
+                                    </ul>
+                                </li>
+                                <li class="@ViewBag.Contact"><a href="@Url.Action("Contact","Home")" class="effect-3">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--/.navbar-collapse-->
+                    <!--/.navbar-->
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <!-- footer -->
+    <div class="footer_top_agileits">
+        <div class="container">
+            <div class="col-md-4 footer_grid">
+                <h3>About Us</h3>
+                <p>
+                    Our Primary aim is to develop in the Students qualities of nationality, patriotism, Integrity, honesty, trust, tolerance and compassion to develop a sense of appreciation for nature so that they become a meaningful part of the environment and to inculcate moral and religious values in students.
+                </p>
+            </div>
+            <div class="col-md-4 footer_grid">
+                <h3>About Developers</h3>
+                <p>
+                    Meet our development team, the whole application has been developed by <b>Raziya</b> and <b>Sameena</b> under the guidance of <b>Misbah Momin</b>.
+                </p>
+                <ul class="footer_grid_list">
+                    <li>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        <a href="#" data-toggle="modal" data-target="#">Prof. Misbah Momin</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        <a href="#" data-toggle="modal" data-target="#myModal">Khan Raziya Shamsullah</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        <a href="#" data-toggle="modal" data-target="#myModal">Khan Sameena Shakeel</a>
+                    </li>
+                    @*<li>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        <a href="#" data-toggle="modal" data-target="#myModal">Dolor amet sed quam vitae</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        <a href="#" data-toggle="modal" data-target="#myModal">Lorem ipsum neque, vulputate </a>
+                    </li>*@
+                </ul>
+            </div>
+            <div class="col-md-4 footer_grid">
+                <h3>Contact Info</h3>
+                <ul class="address">
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>222 Maulana Azaad Nagar Road, Shantinagar, <span>Bhiwandi(Thane).</span></li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:@(mailID)">@mailID</a></li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>@ContactNumber</li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+            
+        </div>
+    </div>
+    <div class="footer_w3ls">
+        <div class="container">
+            <div class="footer_bottom1">
+                <p>© 2017-@DateTime.Now.Year Salahuddin Ayyubi Memorial . All rights reserved</p>
+            </div>
+        </div>
+    </div>
+    <!-- //footer -->
+   
+
+    <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <!-- js -->
+    <script type="text/javascript" src="~/Content/portal/js/jquery-2.1.4.min.js"></script>
+
+    <script type="text/javascript" src="~/Content/portal/js/bootstrap.js"></script>
+    <!-- stats -->
+    <script src="~/Content/portal/js/jquery.waypoints.min.js"></script>
+    <script src="~/Content/portal/js/jquery.countup.js"></script>
+    <script src="~/Content/portal/js/lightbox-plus-jquery.min.js"></script>
+    <script>
+		$('.counter').countUp();
+    </script>
+    <!-- //stats -->
+    <!-- owl carousel -->
+    <script src="~/Content/portal/js/owl.carousel.js"></script>
+    <script>
+		$(document).ready(function () {
+			$("#owl-demo").owlCarousel({
+
+				autoPlay: 3000, //Set AutoPlay to 3 seconds
+				autoPlay: true,
+				items: 3,
+				itemsDesktop: [991, 2],
+				itemsDesktopSmall: [414, 4]
+
+			});
+		});
+    </script>
+    <!-- //owl carousel -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+Khan Atiya Badiuzzama		|MA.BEd        		| Principal
+FazlulRahemaan Mohd Ilyas		|DoubleMA.Bed		|Supervisor
+Momin Israr Niyaz Ahd		|MCOM.BEd		|Ass.Teacher
+AisfIqbal Mohd Mukhtaar		|MCOM.MA.BEd		|Ass.Teacher
+Irshad Ahd Iqbal Ahd		|MSC.BEd			|Ass.Teacher
+Shaikh Mumzammil Iqbal 		|MA.BEd			|Ass.Teacher
+Momin Samrin AbdulMalik		|MSC.BEd			|Ass.Teacher
+Khan Sana Tauseef Ahd		|MSC.BEd			|Ass.Teacher
+Ansari Nafees Mohd Haroon		|MSC.BEd			|Ass.Teacher
+Shaikh Nusrat Basheer Ahd		|MCOM.BEd		|Ass.Teacher
+Qazi NoorishFatema		|MSC.BEd			|Ass.Teacher
+Ansari Gajala Zahir			|MCOM.BEd		|Ass.Teacher
+Ansari Aqsa Nizamuddin		|MSC.BEd			|Ass.Teacher
+Momin Raise Affan			|MSC.BEd			|Ass.Teacher
+Shaikh Shabina Sirazuddin		|MA.BEd			|Ass.Teacher
+Haseeburrahemaan			|MA			|Ass.Teacher
+Siddiqui Nuzhat Farheen		|MA.BEd			|Ass.Teacher
+Khan ZakirHusain ArmanAli		|MA.BEd.MEd		|Ass.Teacher
+Mohd Faisal Mohd Sahab		|MA.MPEd		|Ass.Teacher
+Ansari Mahetaab Aalam		|BSC.MCM		|Ass.Teacher
+Ansari Naziya Niyaz Ahd		|MSC.BEd			|Ass.Teacher
+Hamdole NausheenB		|MA.BEd			|Ass.Teacher
+Ansari HamidAli NiyazAli		|MA.BEd			|Ass.Teacher
+Raana samia Qutbuddin		|MA.BEd			|Ass.Teacher
+Qureshi NaziaB Mohd Shoeb		|MSC.BEd			|Ass.Teacher
+Momin Nida MohdAli		|MSC.BEd			|Ass.Teacher
+Khan Sana MohdAli			|MSC.BEd			|Ass.Teacher
+Ansari Shamsia Anwar Ahd		|MSc.BEd			|Ass.Teacher
+Khot Akbar AbdulSattaar		|MSC.DHF		|Ass.Teacher
+Inamurrahemaan			|Alim-Fazil		|Ass.Teacher
+AfrozAalam Islahi			|Hafiz-Aalim-Fazil		|Ass.Teacher
+Shamim Fatema			|HSC.DEE			|Lab Assistance
+Shaikh ZakirHussain Gaffoor		|BA.LLB			|Labrarian
+Pathan Riyaz Ahd Chand		|HSC			|CLERk
+Patil Bhoshan Ankash		|SSC			|PEON
+Thakre Rahul JagatNath		|HSC			|PEON
+Bismillah Khan			|SSC			|PEON
+Ansari Azmal Riyaaz Ahd		|Vth Pass			|WIREMAN

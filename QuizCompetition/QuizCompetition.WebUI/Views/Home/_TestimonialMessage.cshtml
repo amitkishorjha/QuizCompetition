@@ -1,0 +1,18 @@
+﻿@model School.DomainModel.Testimonial
+<div class="item">
+    <div class="feedback-info">
+        <div class="feedback-top">
+            <p>@Model.Message</p>
+        </div>
+        <div class="feedback-grids">
+            <div class="feedback-img">
+                <img src="@Model.GetRelativeUrl(Model.ImageUrl)" alt="" />
+            </div>
+            <div class="feedback-img-info">
+                <h5>@Model.Name</h5>
+                <p>@Model.Year</p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>

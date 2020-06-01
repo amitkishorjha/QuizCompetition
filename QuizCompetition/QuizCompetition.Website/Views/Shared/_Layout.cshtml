@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weavers'English Meddium Primary High School</title>
+
+    <link rel="stylesheet" media="all" href="~/Content/style.css">
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <header id="header" style="margin-bottom:1%">
+        <div class="container">
+            <a href="@Url.Action("Index","Home")" style="margin-top:-1%" id="logo" title="Weavers'English Meddium Primary High School">
+            </a>
+            <div class="menu-trigger">
+
+            </div>
+            <div style="margin-top: -70px;margin-left: 127px;">
+                <a href="@Url.Action("Index","Home")" style="text-decoration:none"><b style="font-size:50px;font-weight:bold;color: black;text-shadow:2px 5px 3px lightgray">Weaver's</b></a>
+                <p style="font-size: 13px;color: brown;font-weight: bold;text-shadow:2px 5px 3px lightgray">English Medium Primary and High School</p>
+                <nav id="menu" style="float:right;margin-top: -3%;">
+                    <ul>
+                        <li><a href="@Url.Action("About","Home")" style="color:black">About Us</a></li>
+                        <li><a href="@Url.Action("Events","Home")" style="color:black">News & Events</a></li>
+                        <li><a href="@Url.Action("Gallery","Home")" style="color:black">Gallery</a></li>
+                        <li><a href="#fancy" style="color:black" class="get-contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- / navigation -->
+    </header>
+    <!-- / header -->
+
+    <div>
+        @RenderBody()
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <section>
+                <article class="col-1">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li class="address"><a href="#">371, Samadiya Campus <br>Samad Nagar, Kaneri-Bhiwandi.</a></li>
+                        <li class="mail"><a href="#">weaversems@gmail.com</a></li>
+                        <li class="phone last"><a href="#">02522-225007</a></li>
+                    </ul>
+                </article>
+                <article class="col-2">
+                    <h3>Forum topics</h3>
+                    <ul>
+                        @*<li><a href="#">Omnis iste natus error sit</a></li>
+                            <li><a href="#">Nam libero tempore cum soluta</a></li>
+                            <li><a href="#">Totam rem aperiam eaque </a></li>
+                            <li><a href="#">Ipsa quae ab illo inventore veritatis </a></li>
+                            <li class="last"><a href="#">Architecto beatae vitae dicta sunt </a></li>*@
+                    </ul>
+                </article>
+                <article class="col-3">
+                    <h3>Social media</h3>
+                    @*<p>Temporibus autem quibusdam et aut debitis aut rerum necessitatibus saepe.</p>*@
+                    <ul>
+                        <li class="facebook"><a href="#">Facebook</a></li>
+                        <li class="google-plus"><a href="#">Google+</a></li>
+                        <li class="twitter"><a href="#">Twitter</a></li>
+                        <li class="pinterest"><a href="#">Pinterest</a></li>
+                    </ul>
+                </article>
+                <article class="col-4">
+                    <h3>Newsletter</h3>
+                    @*<p>Assumenda est omnis dolor repellendus temporibus autem quibusdam.</p>*@
+                    <form action="#">
+                        <input placeholder="Email address..." type="text">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <ul>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+        <!-- / container -->
+    </footer>
+    <!-- / footer -->
+
+    <div id="fancy">
+        <h2>Request information</h2>
+        <form action="#">
+            <div class="left">
+                <fieldset class="mail"><input placeholder="Email address..." type="text"></fieldset>
+                <fieldset class="name"><input placeholder="Name..." type="text"></fieldset>
+                <fieldset class="subject"><select><option>Choose subject...</option><option>Choose subject...</option><option>Choose subject...</option></select></fieldset>
+            </div>
+            <div class="right">
+                <fieldset class="question"><textarea placeholder="Question..."></textarea></fieldset>
+            </div>
+            <div class="btn-holder">
+                <button class="btn blue" type="submit">Send request</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write("<script src='/Scripts/jquery-1.11.1.min.js'>\x3C/script>")</script>
+    <script src="~/Scripts/plugins.js"></script>
+    <script src="~/Scripts/main.js"></script>
+
+
+</body>
+</html>

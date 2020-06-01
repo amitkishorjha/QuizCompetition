@@ -1,0 +1,92 @@
+﻿@model IEnumerable<School.DomainModel.PhotoDetails>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table DataTable">
+    <thead>
+        <tr>
+
+
+            <th>
+
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+
+                @Html.DisplayNameFor(model => model.ImageUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model) 
+        {
+            <tr>
+
+                <td>
+                    @Html.ActionLink(item.Title, "Details", new { id = item.Id })
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @if(item.ImageUrl.LastIndexOf("GalleryPhotos") >= 0)
+                    {
+                        <img src="\@(item.ImageUrl.Substring(item.ImageUrl.LastIndexOf("GalleryPhotos")))" height="50" width="50" />
+                    }
+                    else
+                    {
+                        @Html.DisplayFor(modelItem => item.ImageUrl)
+                    }
+
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsActive)
+                </td>
+
+                <td>
+
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Actions
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li>@Html.ActionLink("Edit", "Edit", new { id = item.Id })</li>
+                            <li>@Html.ActionLink("Delete", "Delete", new { id = item.Id })</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+}
+    </tbody>
+
+
+</table>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            $('.DataTable').DataTable();
+        });
+    </script>
+
+}

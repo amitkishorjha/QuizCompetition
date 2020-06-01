@@ -1,0 +1,86 @@
+﻿@model School.DomainModel.Testimonial
+@{
+    ViewBag.Title = "Contact";
+}
+	<!-- /inner_content -->
+<div class="inner_content_info_agileits">
+    <div class="container">
+        <h3 class="heading-agileinfo">Contact Us<span>When Climbing The Career Ladder</span></h3>
+        <div class="inner_sec_grids_info_w3ls">
+            <div class="col-md-4 agile_info_mail_img_info">
+                <div class="address-grid">
+                    <h4>Contact <span>Info</span></h4>
+                    <div class="mail-agileits-w3layouts">
+                        <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                        <div class="contact-right">
+                            <p>Telephone </p><span>+91 025 222 525 12</span>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="mail-agileits-w3layouts">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <div class="contact-right">
+                            <p>Mail </p><a href="mailto:feedback@samschool.com">feedback@samschool.com</a>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="mail-agileits-w3layouts">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <div class="contact-right">
+                            <p>Location</p><span>222 Maulana Azaad Nagar Road, Shantinagar,</span>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="agileits_w3layouts_nav_right contact">
+                        <div class="social two">
+                            <ul>
+                                <li><a href="https://www.facebook.com/Salahuddin-Ayyubi-Memorial-Urdu-High-School-Jr-College-424531654662640/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/AyubbiJr"><i class="fa fa-twitter"></i></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 agile_info_mail_img">
+
+            </div>
+            <div class="clearfix"> </div>
+            <div class="clearfix"> </div>
+            <div class="clearfix"> </div>
+            <h3 class="heading-agileinfo">Testimonial<span>Please Post Your Story</span></h3>
+            <div class="w3layouts_mail_grid">
+                <form action="@Url.Action("Create","Testimonial")" method="post" enctype="multipart/form-data">
+                    <div class="col-md-6 wthree_contact_left_grid">
+                        @Html.TextBoxFor(x=>x.Name,new { @placeholder = "Name",@required = "" })
+                        @Html.TextBoxFor(x => x.Email, new { @placeholder = "Email", @required = "" })
+                        @Html.TextBoxFor(x => x.Telephone, new { @placeholder = "Telephone", @required = "" })
+                        @Html.TextBoxFor(x => x.Year, new { @placeholder = "Year", @required = "" })                        
+                    </div>
+                    <div class="col-md-6 wthree_contact_left_grid">
+                        <textarea name="Message" placeholder="Message..." required=""></textarea>
+                        @Html.TextBoxFor(x=>x.ImageUrl,new { @type = "file", @placeholder = "Upload photo" })
+                        
+                        <input type="submit" value="Submit">
+                    </div>
+                    <div class="clearfix"> </div>
+
+                </form>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<!-- //mid-services -->
+<!-- /map -->
+<div class="map">
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.052578189333!2d72.94191781394473!3d19.19290575327705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9a845b42da7%3A0x303dd62333ca46dd!2sSalahuddin+Ayyubi+Memorial+Urdu+High+School!5e0!3m2!1sen!2sin!4v1519911216247"
+            style="border:0"></iframe>
+
+</div>
+<!-- //map -->
+<!-- //inner_content -->
+
